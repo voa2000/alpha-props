@@ -1,13 +1,13 @@
 import React from 'react';
 import './Body.css';
-import prop1 from '../images/property1.jpg';
-import prop2 from '../images/property2.jpg';
-import prop3 from '../images/property3.jpg';
+import prop1 from './images/property1.jpg';
+import prop2 from './images/property2.jpg';
+import prop3 from './images/property3.jpg';
 
 function Body() {
   return (
     <div>
-        <h1>Feature Properties</h1>
+        <h1>Featured Properties</h1>
 
         <div class="container">
         <div class="row">
