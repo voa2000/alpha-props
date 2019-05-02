@@ -1,0 +1,22 @@
+.body-container {
+    position: relative;
+    display:grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "main main main "
+    "main main main"
+    "footer footer footer";
+    background-color: rgb(214, 207, 106);
+    padding: 50px;
+}
+img {
+    width: 250px;
+    height: 200px;
+    grid-area: main;
+    background-color: rgb(79, 109, 20);
+}
+.body-footer {
+    grid-area: footer;
+    background-color: rgb(79, 109, 20);
+}
