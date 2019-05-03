@@ -11,7 +11,7 @@ export default function Header() {
                     <h5 className="card-title">APLHA PROPS</h5>
                     <p className="card-text">Your first stop for a prime Central London Property</p>
                     <p className="card-text">If you are looking for a lifetime property in central London, we are here to help</p>
-                    <button class="btn btn-primary"><span class="glyphicon glyphicon-earphone"/>Call us</button>
+                    <button className="btn btn-primary"><span className="glyphicon glyphicon-earphone"/>Call us</button>
                     
                 </div>
             </div>
