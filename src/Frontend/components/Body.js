@@ -1,11 +1,11 @@
 import React from "react";
-import "./Body.css";
+import "../css/Body.css";
 //Components
 import Property from "./Property";
 //Photos
-import prop1 from "../images/property1.jpg";
-import prop2 from "../images/property2.jpg";
-import prop3 from "../images/property3.jpg";
+import prop1 from "../images/properties/property1.jpg";
+import prop2 from "../images/properties/property2.jpg";
+import prop3 from "../images/properties/property3.jpg";
 
 function Body() {
   return (

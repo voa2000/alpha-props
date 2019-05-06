@@ -1,6 +1,5 @@
 import React from "react";
 //Components
-import Navbar from "./NavBar";
 import Header from "./Header";
 import Body from "./Body";
 import Footer from "./Footer";
