@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link} from "react-router-dom";
 import '../Body/Body.css';
 import prop1 from '../../../images/property1.jpg';
 import prop2 from '../../../images/property2.jpg';
@@ -11,7 +11,7 @@ function Body() {
       <h1>Featured Properties</h1>
       <div className="container">
         <div className="row">
-        <Link to="/lyon">
+            <Link to="/lyon">
           <div className="col">
             <div className="card">
               <img className="rounded mx-auto d-block" src={prop1} alt="Property 1" />
@@ -23,8 +23,8 @@ function Body() {
               </div>
             </div>
           </div>
-          </Link>
-          <Link to="/terry">
+            </Link>
+            <Link to="/timber">
           <div className="col">
             <div className="card">
               <img className="rounded mx-auto d-block" src={prop2} alt="Property 2" />
@@ -37,7 +37,7 @@ function Body() {
             </div>
           </div>
           </Link>
-          <Link to="/timber">
+          <Link to="/terry">
           <div className="col">
             <div className="card">
               <img className="rounded mx-auto d-block" src={prop3} alt="Property 3" />
