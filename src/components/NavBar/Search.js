@@ -8,8 +8,8 @@ class Search extends Component {
     render() {
         return (
             <div className='container'>
+                <Link to='/' className='navigation_items' />
                 <h1>This is search component</h1>
-                <Link to='/' className='brand-logo' />
             </div>
         );
     }

@@ -8,7 +8,7 @@ class Home extends Component {
     render() {
         return (
             <div className='container'>
-                <Link to='/' className='brand-logo' />
+                <Link to='/' className='navigation_items' />
             </div>
         )
     }

@@ -8,8 +8,8 @@ class About extends Component {
     render() {
         return (
             <div className='container'>
+                <Link to='/About' className='navigation_items' />
                 <h1>This is our about page</h1>
-                <Link to='/' className='brand-logo' />
            </div>
         )
     }

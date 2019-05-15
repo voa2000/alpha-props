@@ -1,17 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './NavBar.css';
 
 
 const NavBar = () => (
-  <nav className="nav-wrapper grey darken-3">
+  <div className="navigation">
     <div className="container">
-      <Link to="/" className="brand-logo" />
-      <Link to={'/'} >Home </Link>  
-      <Link to={'/About'} >About </Link>  
-      <Link to={'Search'} >Search </Link> 
-      <Link to={'/Login'} >Login </Link> 
+      <nav to="/" className="navigation_items">
+        <ul>
+            <Link to={'/'} >Home </Link>
+            <Link to={'/About'} >About </Link>
+            <Link to={'/Search'} >Search </Link>
+            <Link to={'/Login'} >Login </Link>
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </div>
 );
 
 export default NavBar;

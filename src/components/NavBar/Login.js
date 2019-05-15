@@ -8,8 +8,8 @@ class Login extends Component {
     render() {
         return (
             <div className='container'>
+                <Link to='/Login' className='navigation_items' />
                 <h1>This is login page working</h1>
-                <Link to='/' className='brand-logo' />
             </div>
         );
     }
