@@ -1,3 +1,54 @@
 .Footer {
-    padding-top: 30px;
+    display: block;
+    text-align: center; 
+    box-sizing: border-box;
+    padding-top: 2em;  
+}
+
+.Footer .Footer-Header {
+    padding: 0.1em;
+    border: solid rgba(0, 0, 0, 0.125);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.Footer .Footer-Body {
+    padding: 1.5em
+}
+
+.Footer .Footer-End {
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 0.01em;
+    border: solid rgba(0, 0, 0, 0.125);
+}
+
+.Footer .Footer-Body button{
+    background-color:rgb(36, 109, 219);
+    border: solid rgb(36, 109, 219);
+    padding: 0.5
+}
+
+.Footer h1 {
+    font-size: 150%;
+    font-weight: 600;  
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0
+}
+
+.Footer h3 {
+    font-size: 110%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0em;
+}
+
+.Footer p {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    margin: 0
+}
+
+.Footer a {
+    color: whitesmoke;
+    text-decoration: none;
+
 }
