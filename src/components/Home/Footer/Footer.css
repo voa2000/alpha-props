@@ -1,8 +1,7 @@
 .Footer {
     display: block;
     text-align: center; 
-    box-sizing: border-box;
-    padding-top: 2em;  
+    padding: 2em
 }
 
 .Footer .Footer-Header {
@@ -12,7 +11,9 @@
 }
 
 .Footer .Footer-Body {
-    padding: 1.5em
+    padding: 1.5em;
+    border-right: solid rgba(0, 0, 0, 0.1);
+    border-left: solid rgba(0, 0, 0, 0.1)
 }
 
 .Footer .Footer-End {
@@ -31,6 +32,7 @@
     font-size: 150%;
     font-weight: 600;  
     color: rgba(0, 0, 0, 0.8);
+    padding: 0.5em;
     margin: 0
 }
 
@@ -38,7 +40,7 @@
     font-size: 110%;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8);
-    margin: 0em;
+    margin: 0
 }
 
 .Footer p {
