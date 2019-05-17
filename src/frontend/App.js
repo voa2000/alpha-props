@@ -1,21 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import PropOne from './PropOne';
-import PropTwo from './PropTwo';
-import PropThree from './PropThree';
-import NavBar from './NavBar';
-import Home from './Home';
+import PropOne from './components/PropOne';
+import PropTwo from './components/PropTwo';
+import PropThree from './components/PropThree';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
 import './App.css';
-import Search from './Search';
-import About from './About';
-import Login from './Login';
-import Footer from './Footer';
+import Search from './components/Search';
+import About from './components/About';
+import Login from './components/Login';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
       <div className="App">
-
         <div>
           <NavBar />
           <Switch>

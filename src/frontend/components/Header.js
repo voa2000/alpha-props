@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import HeaderImage from '../common/images/header.png';
 
-export default function Header() {
+function Header() {
   return (
     <div className="outerbox">
       <div className="headerImage">
@@ -17,3 +17,5 @@ Your first stop for a Prime Propery in Central London
 
   );
 }
+
+export default Header;
