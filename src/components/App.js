@@ -9,7 +9,7 @@ import './App.css';
 import Search from './Search';
 import About from './About';
 import Login from './Login';
-import Footer from "./Footer";
+import Footer from './Footer';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
             <Route exact path="/terry" component={PropTwo} />
             <Route exact path="/timber" component={PropThree} />
           </Switch>
-          <Footer/>
+          <Footer />
         </div>
       </div>
     </Router>
