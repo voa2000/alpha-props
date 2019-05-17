@@ -1,5 +1,5 @@
 import React from 'react';
-import prop3 from '../../../images/property3.jpg';
+import prop3 from '../common/images/property3.jpg';
 
 class PropThree extends React.Component {
   render() {
