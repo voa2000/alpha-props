@@ -1,12 +1,12 @@
 import React from 'react';
 import './Footer.css';
 
-export default function Footer() {
+function Footer() {
   return (
     <div className="Footer">
       <div className="Footer-Header">
         <h1>Contact us!</h1>
-      </div> 
+      </div>
       <div className="Footer-Body">
         <h3>Your perfect home is just a click away!</h3>
         <p>To find out more details about Alpha Props: </p>
@@ -20,3 +20,5 @@ export default function Footer() {
     </div>
   );
 }
+
+export default Footer;
