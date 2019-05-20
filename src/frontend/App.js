@@ -10,6 +10,7 @@ import Search from './components/Search';
 import About from './components/About';
 import Login from './components/Login';
 import Footer from './components/Footer';
+import NavbarSpacer from "./components/NavbarSpacer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <div className="App">
         <div>
           <NavBar />
+          <NavbarSpacer/>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/Search" component={Search} />
