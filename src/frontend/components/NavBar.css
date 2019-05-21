@@ -6,7 +6,8 @@
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
 }
 
 .navigation-title h1 {
@@ -44,3 +45,18 @@
 .navigation_items a:active {
     color: red;
 }
+
+@media only screen and (max-width: 750px) {
+    .navigation-inputbox {
+        display: none;
+}
+  }
+@media only screen and (max-width: 500px) {
+    .navigation-title {
+        display: none;
+    }
+    .navigation_items {
+        height: 50px;
+    }
+}
+  
