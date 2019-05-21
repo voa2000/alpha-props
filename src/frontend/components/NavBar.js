@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
-
+import SearchBar from './SearchBar.js';
 
 function NavBar() {
   return (
@@ -15,12 +15,7 @@ function NavBar() {
         <Link to="/Search">Search </Link>
         <Link to="/Login">Login </Link>
       </nav>
-      <div className="navigation-inputbox">
-        <input
-          type="text"
-          placeholder="Search"
-        />
-      </div>
+      <SearchBar/>
     </div>
   );
 }

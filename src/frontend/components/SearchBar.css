@@ -1,0 +1,23 @@
+
+.gsc-control-cse, .gsc-control-cse-en {
+    background-color: inherit !important;
+    border: none !important;
+}
+
+#___gcse_0 {
+    justify-self: stretch !important;
+    align-self: center !important;
+    padding-right: 1em !important
+}
+
+.cse .gsc-search-button-v2, .gsc-search-button-v2 {
+    border: solid rgba(255, 255, 255, 0.911) !important;
+    border-width: thick !important;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .cse .gsc-control-cse, .gsc-control-cse {
+        display: none;
+    }
+}
