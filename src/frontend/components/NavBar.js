@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <div className="navigation">
       <div className="navigation-title">
-        <h1>Alpha-props</h1>
+        <h1>Alpha Properties</h1>
       </div>
       <nav to="/" className="navigation_items">
         <Link to="/">Home </Link>
