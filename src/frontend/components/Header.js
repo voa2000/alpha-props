@@ -1,16 +1,14 @@
 import React from 'react';
 import './Header.css';
-import HeaderImage from '../common/images/header.png';
+
 
 function Header() {
   return (
-    <div className="outerbox">
-      <div className="headerImage">
-        <img src={HeaderImage} alt="" />
+    <div className="header-container">
+      <div className="header-image">
         <div className="overlay">
-ALPHA PROPERTIES
-          <br />
-Your first stop for a Prime Propery in Central London
+          <h1>ALPHA PROPERTIES</h1>
+          <h3>Your first stop for a Prime Propery in Central London</h3>
         </div>
       </div>
     </div>
