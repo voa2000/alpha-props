@@ -3,4 +3,4 @@
 This projects builds a real estate agent website that specialises in prime property in central London.
 It's built with React.js && Node.js.
 
-![Stock property](https://raw.githubusercontent.com/kodiri/alpha-props/master/src/frontend/common/images/header.png)
+![Stock property](https://raw.githubusercontent.com/kodiri/alpha-props/master/src/frontend/common/images/header.jpg)
