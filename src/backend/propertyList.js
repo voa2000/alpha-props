@@ -6,7 +6,8 @@ const propertyList = [
     bedrooms: 2,
     price: 750000,
     lat: "51.50129000",
-    lng: "-0.01816800"
+    lng: "-0.01816800",
+    description: "The apartments at Lyons Place are spacious, light and quiet, designed with an elegant, understated flair and fine attention to detail."
   },
   {
     id: "prop2",
@@ -15,7 +16,8 @@ const propertyList = [
     bedrooms: 2,
     price: 199950,
     lat: "51.79257200",
-    lng: "1.16707500"
+    lng: "1.16707500",
+    description: "The attention to detail and hand selected materials are inclusive of timber, natural stone and impeccable craft elements."
   },
   {
     id: "prop3",
@@ -24,7 +26,8 @@ const propertyList = [
     bedrooms: 3,
     price: 240000,
     lat: "52.42375600",
-    lng: "-1.84638800"
+    lng: "-1.84638800",
+    description: "This property was designed by renowned architect Sir Terry Farrell, considered to be one of London’s best Central London's scheme."
   },
   {
     id: "prop4",
@@ -33,7 +36,9 @@ const propertyList = [
     bedrooms: 2,
     price: 75000,
     lat: "53.78595000",
-    lng: "-1.08516200"
+    lng: "-1.08516200",
+    description: "The apartments at Lyons Place are spacious, light and quiet, designed with an elegant, understated flair and fine attention to detail."
+
   },
   {
     id: "prop5",
@@ -42,7 +47,9 @@ const propertyList = [
     bedrooms: 3,
     price: 215000,
     lat: "54.64915000",
-    lng: "-1.66710100"
+    lng: "-1.66710100",
+    description: "This property was designed by renowned architect Sir Terry Farrell, considered to be one of London’s best Central London's scheme."
+
   },
   {
     id: "prop6",
@@ -51,7 +58,9 @@ const propertyList = [
     bedrooms: 1,
     price: 170000,
     lat: "51.14547300",
-    lng: "0.27270600"
+    lng: "0.27270600",
+    description: "This property was designed by renowned architect Sir Terry Farrell, considered to be one of London’s best Central London's scheme."
+
   }
 ];
 module.exports = propertyList;
