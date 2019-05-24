@@ -1,4 +1,5 @@
 import React from 'react';
+import './PropertyPage.css';
 
 export default class PropertPage extends React.Component {
     constructor() {
@@ -21,22 +22,17 @@ export default class PropertPage extends React.Component {
 
     render() {
         return (
-            
-            <div className="body-card">
-                    <div className="card">
-                        <img src={require(`../common/images/${this.props.match.params.propertyId}.jpg`)} alt={`${this.props.match.params.propertyId}`} />
-                        <div className="card-body">
-                            <p className="card-text">
-                                <p>Property ID: {this.state.propertyList.id}</p>
-                                <p>Property TYPE: {this.state.propertyList.type}</p>
-                                <p>Property PRICE: {this.state.propertyList.price}</p>
-                                <p>DESCRIPTION: {this.state.propertyList.description} </p>
-                            </p>
-                        </div>
-                    </div>
+            <div className="propertyPage-container">
+                <div className="propertyPage-image">
+                    <img src={require(`../common/images/${this.props.match.params.propertyId}.jpg`)} alt={`${this.props.match.params.propertyId}`} />
                 </div>
+                <div className="propertyPage-body">
+                    <h1>{this.state.propertyList.address}</h1>
+                    <h3>{this.state.propertyList.bedrooms} bedroom {this.state.propertyList.type} - £{this.state.propertyList.price}</h3>
+                    <p>{this.state.propertyList.description} </p>
+                </div>
+            </div>
         );
     }
-
 }
 
