@@ -1,24 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Property.css';
 
-export default function Property(props) {
+function Property(props) {
     return (
-        <Link to={"/" + props.id}>
-            <div className="body-card">
-                <div className="col">
-                    <div className="card">
-                        <img className="rounded mx-auto d-block" src={require(`../common/images/${props.id}.jpg`)}  alt={`${props.title}`} />
-                        <div className="card-body">
-                            <p className="card-text">
-                                <p>Property ID: {props.id}</p>
-                                <p>{props.bedrooms} bedrooms {props.type}</p>
-                                <p>Property PRICE: {props.price}</p>
-                            </p>
-                        </div>
-                    </div>
+        <div className="property-card">
+            <div className="property-card-body">
+                <Link to={"/" + props.id}>
+                    <img src={require(`../common/images/${props.id}.jpg`)} alt={`${props.title}`} />
+                </Link>
+                <div className="property-card-text">
+                    <p>Property ID: {props.id}</p>
+                    <p>{props.bedrooms} bedrooms {props.type}</p>
+                    <p>Property PRICE: {props.price}</p>
                 </div>
             </div>
-        </Link>
-    )
+        </div >
+    );
 }
-
+export default Property;

@@ -23,7 +23,6 @@ export default class Body extends React.Component {
         <div className="body-container">
           <h1>Featured Properties</h1>
           <div className="body-properties">
-
                 {this.state.propertyList.map( property => (
                   <Property
                     key={property.id}
@@ -32,7 +31,6 @@ export default class Body extends React.Component {
                     price={property.price}
                     />
                 ))
-               
                 }         
           </div>
         </div>
