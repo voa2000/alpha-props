@@ -1,28 +1,17 @@
+.body-container {
+  box-sizing: border-box;
+  padding: 1.5em;
+}
+
 .body-container h1 {
   font-weight: 600;
   font-size: 2.3rem;
 }
 
-.body-container {
-  box-sizing: border-box;
-  padding: 1em
-}
 
 .body-properties {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 0.5em
-}
-
-.body-card {
-  flex: 1;
-  border: solid rgb(0, 0, 0, 0.125);
-  padding: 1.5em;
-  margin: 0.5em
-}
-
-img {
-  width: 15rem;
-  height: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22em , 1fr));
+  grid-gap: 1em;
+  justify-content: center;
 }
