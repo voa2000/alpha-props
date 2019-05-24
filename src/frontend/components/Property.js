@@ -10,9 +10,9 @@ function Property(props) {
                     <img src={require(`../common/images/${props.id}.jpg`)} alt={`${props.title}`} />
                 </Link>
                 <div className="property-card-text">
-                    <p>Property ID: {props.id}</p>
-                    <p>{props.bedrooms} bedrooms {props.type}</p>
-                    <p>Property PRICE: {props.price}</p>
+                    <h3>{props.address}</h3>
+                    <h6>{props.bedrooms} bedrooms {props.type} - £{props.price}</h6>
+                    <p>{props.description}</p>
                 </div>
             </div>
         </div >
