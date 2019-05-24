@@ -1,0 +1,11 @@
+.about-container {
+padding-top: 3em
+}
+
+
+@media only screen and (max-width: 500px) {
+    .about-container {
+        padding-top: 5em
+    }
+
+}
