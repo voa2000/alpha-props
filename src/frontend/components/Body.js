@@ -1,10 +1,9 @@
 import React from 'react';
-// import { Link } from "react-router-dom";
 import './Body.css';
 import Property from './Property';
 import LoadingIndicator from './LoadingIndicator';
 
-export default class Body extends React.Component {
+class Body extends React.Component {
   constructor() {
     super();
     this.state = { propertyList: [], isLoading: true };
@@ -30,7 +29,9 @@ export default class Body extends React.Component {
             <Property
               key={property.id}
               id={property.id}
+              address={property.address}
               type={property.type}
+              bedrooms={property.bedrooms}
               price={property.price}
             />
           ))
@@ -40,3 +41,5 @@ export default class Body extends React.Component {
     );
   }
 }
+
+export default Body;
