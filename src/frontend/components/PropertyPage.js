@@ -30,6 +30,7 @@ class PropertyPage extends React.Component {
             id={property.id}
             type={property.type}
             price={property.price}
+            bedrooms={property.bedrooms}
             description={property.description}
           />
         ))}
