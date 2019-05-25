@@ -3,15 +3,37 @@
    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
    text-align: center
 }
-.main-container {
-   margin: 4rem 2.5rem;
-}
+
 .nav-bar-spacer {
-   height: 11.5vh;
+   background-color: rgba(28,28,28);
+   height: 6vh;
+
 }
+
+@media only screen and (max-width: 750px) {
+   .cse .gsc-control-cse, .gsc-control-cse {
+       display: none;
+   }
+}
+
 @media only screen and (max-width: 500px) {   
    .nav-bar-spacer {
-       height: 50px;
+      height: 4vh;
+   }
+   .navigation-title h1 {
+      font-size: 1.5em;
+  }
+
+   .header-container {
+      height: 96vh;
    }
 
+   .overlay h1 {
+      font-size: 200%;
+      padding: 2em;
+  }
+  
+  .overlay h3 {
+      font-size: 150%;
+  }
 }

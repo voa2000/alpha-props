@@ -1,0 +1,29 @@
+.property-card {
+    border: solid rgba(0, 0, 0, 0.125);
+  }
+  
+.property-card img {
+    width: 100%;
+    height: 15em;
+  }
+
+.property-card-text {
+  box-sizing: border-box;
+  padding: 0.5em
+}
+
+.property-card-text h3 {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0.5em;
+  font-weight: 650  
+}
+
+.property-card-text h6 {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 550;
+  margin: 1.5em
+}
+
+.property-card-text p {
+  color: rgba(0, 0, 0, 0.5);
+}

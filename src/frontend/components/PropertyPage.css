@@ -1,0 +1,23 @@
+.propertyPage-container {
+
+}
+
+.propertyPage-image {
+    height: 94vh;
+    overflow: hidden;
+}
+
+.propertyPage-image img {
+    width: 100%;
+    height: 100%
+}
+
+.propertyPage-body {
+    padding: 1em
+}
+
+@media only screen and (max-width: 500px) {
+    .propertyPage-image {
+        height: 60vh;
+    }
+}

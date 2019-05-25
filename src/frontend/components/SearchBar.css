@@ -16,8 +16,4 @@
 }
 
 
-@media only screen and (max-width: 750px) {
-    .cse .gsc-control-cse, .gsc-control-cse {
-        display: none;
-    }
-}
+
