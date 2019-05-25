@@ -6,7 +6,7 @@ function PropertyPageStack(props) {
   return (
       <div className="body-container">
         <div className="body-properties">
-      <div className="property-card">
+      <div className="property-card no-transform">
         <div className="property-card-body">
           <Link to={`/${props.id}`}>
             <img src={require(`../common/images/${props.id}.jpg`)} alt={`${props.id}`} />
