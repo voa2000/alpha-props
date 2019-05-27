@@ -14,7 +14,9 @@
   },
   "scripts": {
     "start-dev": "run-p start-frontend start-backend",
-    "start": "run-s build start-node",
+    "gcp-build": "npm run build",
+    "heroku-prebuild": "npm run build",
+    "start": "node ./src/backend/server.js",
     "start-frontend": "NODE_ENV=dev react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
