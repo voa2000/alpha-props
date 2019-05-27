@@ -1,7 +1,9 @@
 {
   "name": "alpha-props",
   "version": "0.1.0",
+  "description": "Alpha Properties Project by Alpha team from Kodiri bootcamp",
   "private": true,
+  "main": "server.js",
   "dependencies": {
     "express": "^4.16.4",
     "npm-run-all": "^4.1.5",
@@ -20,6 +22,48 @@
     "start-backend": "NODE_ENV=dev nodemon src/backend/server.js",
     "start-node": "node src/backend/server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodiri/alpha-props.git"
+  },
+  "authors": [
+    {
+      "name": "Buket Konuk",
+      "github": "buketkonuk",
+      "homepage": "https://buketkonuk.github.io/buketportfolio/",
+      "role": "Developer"
+    },
+    {
+      "name": "Florin Bunea",
+      "github": "florinbunea",
+      "homepage": "https://florinbunea.github.io/portfolio/",
+      "role": "Developer"
+    },
+    {
+      "name": "Gawah Chan",
+      "github": "GawahChan",
+      "homepage": "https://gawahchan.github.io/portfolio/",
+      "role": "Developer"
+    },
+    {
+      "name": "Vilius Vystartas",
+      "github": "vystartasv",
+      "homepage": "https://vystartasv.github.io/vilius-profile/",
+      "role": "Developer"
+    },
+    {
+      "name": "Vivienne Owusu-Ansah",
+      "github": "voa2000",
+      "homepage": "https://voa2000.github.io/portfolio/",
+      "role": "Developer"
+    },
+    {
+      "name": "Walter Christian",
+      "github": "walterperez",
+      "homepage": "https://walter-web-dev.herokuapp.com/",
+      "role": "Developer"
+    }
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
