@@ -9,6 +9,7 @@ import Login from './components/Login';
 import Footer from './components/Footer';
 import NavbarSpacer from "./components/NavbarSpacer";
 import PropertyPage from "./components/PropertyPage";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/Search" component={Search} />
             <Route exact path="/About" component={About} />
             <Route exact path="/Login" component={Login} />
+            <Route exact path="/NotFound" component={NotFound}/>
             <Route exact path="/:propertyId" component={PropertyPage} />
           </Switch>
           <Footer />

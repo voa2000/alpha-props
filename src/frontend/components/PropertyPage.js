@@ -1,38 +1,42 @@
 import React from 'react';
-import './PropertyPage.css';
+import { Redirect } from 'react-router-dom';
+import LoadingIndicator from './LoadingIndicator';
+import PropertyPageStack from './PropertyPageStack';
 
-export default class PropertPage extends React.Component {
-    constructor() {
-        super();
-        this.state = { propertyList: [] };
+class PropertyPage extends React.Component {
+  constructor() {
+    super();
+    this.state = { propertyList: [], isLoading: true };
+  }
+
+  async componentDidMount() {
+    const property = this.props.match.params.propertyId;
+    const response = await fetch(`/api/properties/${property}`);
+    const data = await response.json();
+    await this.setState({ propertyList: data, isLoading: false });
+  }
+
+  render() {
+    if (this.state.isLoading) {
+      return <LoadingIndicator />;
+    } if (this.state.propertyList[0] === null) {
+      return <Redirect to="/NotFound" />;
     }
-
-    componentDidMount() {
-        fetch("/api/properties/")
-            .then(res => res.json())
-            // .then(propertyList => console.log(propertyList))
-            .then(propertyList => {
-                let propId = this.props.match.params.propertyId;
-                // console.log(tvShowId);
-                let property = propertyList.find(prop => prop.id === propId);
-                this.setState({ propertyList: property })
-            });
-
-    }
-
-    render() {
-        return (
-            <div className="propertyPage-container">
-                <div className="propertyPage-image">
-                    <img src={require(`../common/images/${this.props.match.params.propertyId}.jpg`)} alt={`${this.props.match.params.propertyId}`} />
-                </div>
-                <div className="propertyPage-body">
-                    <h1>{this.state.propertyList.address}</h1>
-                    <h3>{this.state.propertyList.bedrooms} bedroom {this.state.propertyList.type} - £{this.state.propertyList.price}</h3>
-                    <p>{this.state.propertyList.description} </p>
-                </div>
-            </div>
-        );
-    }
+    return (
+      <div>
+        {this.state.propertyList.map(property => (
+          <PropertyPageStack
+            key={property.id}
+            id={property.id}
+            type={property.type}
+            price={property.price}
+            bedrooms={property.bedrooms}
+            description={property.description}
+          />
+        ))}
+      </div>
+    );
+  }
 }
 
+export default PropertyPage;

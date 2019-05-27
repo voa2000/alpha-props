@@ -6,10 +6,10 @@ import Body from "./Body"
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <>
         <Header />
         <Body />
-      </div>
+      </>
     );
   }
 }
