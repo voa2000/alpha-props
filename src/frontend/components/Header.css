@@ -1,7 +1,7 @@
 
 
 .header-container {
-    background-image: linear-gradient(rgba(56, 169, 245, 0.4), rgba(0, 0, 0, 0.85)), url(../common/images/header.jpg);
+    background-image: linear-gradient(rgba(56, 169, 245, 0.4), rgba(0, 0, 0, 0.60)), url(../common/images/header.jpg);
     background-size: cover;
     background-position: center;
     height: 94vh;
