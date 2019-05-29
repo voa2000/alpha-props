@@ -15,3 +15,9 @@
   grid-gap: 1em;
   justify-content: center;
 }
+
+@media only screen and (min-width: 1700px ) {
+  .body-properties {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

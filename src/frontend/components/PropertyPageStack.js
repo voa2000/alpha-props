@@ -1,7 +1,6 @@
 import React from 'react';
 import './PropertyPageStack.css';
 import Map from "./Map";
-import LoadingIndicator from "./LoadingIndicator";
 
 function PropertyPageStack(props) {
   return (
