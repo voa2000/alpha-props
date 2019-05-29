@@ -5,8 +5,8 @@ function Map(props) {
   return (
     <iframe
         title={props.title}
-      width="600"
-      height="450"
+      width="100%"
+      height="100%"
       frameBorder="0"
       style={{border:0}}
       src={url}
