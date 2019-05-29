@@ -1,11 +1,12 @@
 import React from 'react';
 import './PropertyPageStack.css';
 import Map from "./Map";
+import LoadingIndicator from "./LoadingIndicator";
 
 function PropertyPageStack(props) {
   return (
     <div className="propertyPage-container">
-      <img src={require(`../common/images/${props.id}.jpg`)} alt={`${props.id}`} />
+      <img src={(`https://www.googleapis.com/storage/v1/b/alpha-properties-app.appspot.com/o/common%2fimages%2f${props.id}.jpg?alt=media`)} alt={`${props.id}`} />
         <h1>Property Details</h1>
       <div className="propertyPage-body">
         <div className="propertyPage-text">
