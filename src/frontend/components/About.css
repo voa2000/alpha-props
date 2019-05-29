@@ -1,7 +1,25 @@
 .about-container {
 padding-top: 3em
 }
+.about-body-text {
+    padding: 1em;
+}
+.about-profile-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14em,1fr));
+    align-items: center;
+    justify-items: stretch;
 
+}
+.teamheading {
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about-profile-images img {
+    width:  5em;
+    height: 5em;
+}
 
 @media only screen and (max-width: 500px) {
     .about-container {
