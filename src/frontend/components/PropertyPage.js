@@ -29,6 +29,8 @@ class PropertyPage extends React.Component {
             key={property.id}
             id={property.id}
             type={property.type}
+            lat={property.lat}
+            lng={property.lng}
             price={property.price}
             bedrooms={property.bedrooms}
             description={property.description}
