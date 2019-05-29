@@ -1,7 +1,7 @@
 
 
 .header-container {
-    background-image: linear-gradient(rgba(56, 169, 245, 0.4), rgba(0, 0, 0, 0.85)), url(../common/images/header.jpg);
+    background-image: linear-gradient(rgba(56, 169, 245, 0.4), rgba(0, 0, 0, 0.85)), url(https://www.googleapis.com/storage/v1/b/alpha-properties-app.appspot.com/o/common%2Fimages%2Fheader.jpg?alt=media);
     background-size: cover;
     background-position: center;
     height: 94vh;
