@@ -28,6 +28,7 @@ class PropertyPage extends React.Component {
           <PropertyPageStack
             key={property.id}
             id={property.id}
+            address={property.address}
             type={property.type}
             lat={property.lat}
             lng={property.lng}

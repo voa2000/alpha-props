@@ -6,11 +6,11 @@ function PropertyPageStack(props) {
   return (
     <div className="propertyPage-container">
       <img src={require(`../common/images/${props.id}.jpg`)} alt={`${props.id}`} />
+        <h1>Property Details</h1>
       <div className="propertyPage-body">
         <div className="propertyPage-text">
-          <h3>{props.address}</h3>
-          <h4>£{props.price}</h4>
-          <h6>{props.bedrooms} bedroom {props.type} for sale</h6>
+          <h2>{props.address}</h2>
+          <h3>{props.bedrooms} bedroom {props.type} for sale - £{props.price}</h3>
           <p>{props.description}</p>
         </div>
         <div className="propertyPage-Map">

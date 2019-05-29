@@ -1,18 +1,38 @@
 .propertyPage-container img {
-    height: 90vh;
+    height: auto;
     width: 100%;
+    object-fit: cover;
+}
+
+.propertyPage-container h1 {
+    font-size: 200%;
+    font-weight: 500
+}
+
+.propertyPage-container h2 {
+    font-size: 150%;
+    font-weight: 500
+}
+
+.propertyPage-container h3 {
+    font-weight: 500
+}
+
+.propertyPage-container p {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .propertyPage-body {
     display: flex;
     box-sizing: border-box;
-    padding: 1.5em;
+    padding: 1.5em
 }
 
 .propertyPage-text {
     flex: 1;
     padding: 1em;
-    height: 20em
+    height: 20em;
+    border: solid rgba(0, 0, 0, 0.125);
 }
 
 .propertyPage-Map {
@@ -21,7 +41,7 @@
 
 @media only screen and (max-width: 500px) {
     .propertyPage-container img {
-        height: 50vh;
+        height: 100vh;
     }
     
     .propertyPage-body {
