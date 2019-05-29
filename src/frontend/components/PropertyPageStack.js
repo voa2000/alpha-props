@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import './PropertyPageStack.css';
 import Map from "./Map";
+import LoadingIndicator from "./LoadingIndicator";
 
 function PropertyPageStack(props) {
   return (
@@ -9,9 +10,11 @@ function PropertyPageStack(props) {
         <div className="body-properties">
       <div className="property-card no-transform">
         <div className="property-card-body">
-          <Link to={`/${props.id}`}>
-            <img src={require(`../common/images/${props.id}.jpg`)} alt={`${props.id}`} />
-          </Link>
+          <Link to={`/${props.id}`}>{
+              props.id ?
+            <img src={(`https://www.googleapis.com/storage/v1/b/alpha-properties-app.appspot.com/o/common%2fimages%2f${props.id}.jpg?alt=media`)} alt={`${props.id}`} />
+            : <LoadingIndicator/>
+          }</Link>
           <div className="property-card-text">
             <h3>{props.address}</h3>
             <h4>£{props.price}</h4>
