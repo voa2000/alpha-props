@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import './PropertyPageStack.css';
+import Map from "./Map";
 
 function PropertyPageStack(props) {
   return (
@@ -16,6 +17,7 @@ function PropertyPageStack(props) {
             <h4>£{props.price}</h4>
             <h6>{props.bedrooms} bedroom {props.type} for sale</h6>
             <p>{props.description}</p>
+            <Map lat={props.lat} lng={props.lng} title={props.title}/>
           </div>
         </div>
       </div>
