@@ -1,10 +1,5 @@
 import React from 'react';
 import './About.css';
-import florin from "../common/profileImages/florin.jpg";
-import buket from "../common/profileImages/buket.png";
-import gawah from "../common/profileImages/gawah.jpg";
-import vilius from "../common/profileImages/vilius.png";
-import viv from "../common/profileImages/viv.png";
 
 function About() {
   return (
@@ -21,25 +16,25 @@ function About() {
       <div className="about-profile-images">
           <div>
           <a href="https://www.linkedin.com/in/florin-bunea-0a17a212a/" target="_blank" rel="noopener noreferrer">
-            <img src={florin} alt="florin"/></a>
+            <img src={(`https://www.googleapis.com/storage/v1/b/alpha-properties-app.appspot.com/o/common%2fprofile%2fflorin.jpg?alt=media`)} alt="florin"/></a>
             <h1>Florin</h1>
           </div>
           <div>
             <a href="https://www.linkedin.com/in/buketkonuk/" target="_blank" rel="noopener noreferrer">
-            <img src={buket} alt="buket"/></a>
+            <img src={(`https://www.googleapis.com/storage/v1/b/alpha-properties-app.appspot.com/o/common%2fprofile%2fbuket.jpg?alt=media`)} alt="buket"/></a>
             <h1>Buket</h1>
           </div>
           <div>
             <a href="https://gawahchan.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
-            <img src={gawah} alt="gawah"/></a>
+            <img src={(`https://www.googleapis.com/storage/v1/b/alpha-properties-app.appspot.com/o/common%2fprofile%2fgawah.jpg?alt=media`)} alt="gawah"/></a>
             <h1>Gawah</h1>
           </div>
           <div>
-            <img src={vilius} alt="vilius"/>
+            <img src={(`https://www.googleapis.com/storage/v1/b/alpha-properties-app.appspot.com/o/common%2fprofile%2fvilius.jpg?alt=media`)} alt="vilius"/>
             <h1>Vilius</h1>
           </div>
           <div>
-            <img src={viv} alt="viv"/>
+            <img src={(`https://www.googleapis.com/storage/v1/b/alpha-properties-app.appspot.com/o/common%2fprofile%2fviv.jpg?alt=media`)} alt="viv"/>
             <h1>Viv</h1>
           </div>
         </div>
