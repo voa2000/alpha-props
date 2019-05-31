@@ -13,7 +13,7 @@ class Body extends React.Component {
     const response = await fetch('/api/properties');
     const data = await response.json();
     await this.setState({ propertyList: data, isLoading: false });
-    this.setState({originalProperties: this.state.propertyList});
+    this.setState({originalProperties: this.state.propertyList.length});
   }
 
   searchProperty(input){
@@ -26,17 +26,16 @@ class Body extends React.Component {
        )
   }
   inputHandler(e) {
-    this.setState({originalProperties: this.state.propertyList.map(a => a)});
+    this.setState({originalProperties: this.state.propertyList.length});
     if (e.target.value.length > 3){
       let res = this.searchProperty(e.target.value);
     if (res.length > 0){
       this.setState({propertyList: res});
     }
     } else {
-      console.log(`propertyList is: ${this.state.propertyList.length}`);
-      console.log(`originalList is: ${this.state.originalProperties.length}`);
+      this.componentDidMount();
 
-      if (this.state.originalProperties.length !== this.state.propertyList.length){
+      if (this.state.originalProperties !== this.state.propertyList.length){
        this.componentDidMount();
         // console.log(this.state.propertyList);
       }
@@ -51,8 +50,8 @@ class Body extends React.Component {
     }
     return (
       <div className="body-container">
-        <input type="text" onChange={(e) => this.inputHandler(e)} />
-      <label>Property</label>
+        <input type="text" placeholder="Search properties" onChange={(e) => this.inputHandler(e)} />
+      {/* <label>Property</label> */}
         <h1>Featured Properties</h1>
         <div className="body-properties">
           {this.state.propertyList.map(property => (
