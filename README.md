@@ -5,6 +5,6 @@
 
 ### Live demo links below &#x21e9;
 
-[@Google App Engine](https://alpha-properties-app.appspot.com/) && [@Heroku](https://alpha-props.herokuapp.com/)
+[@Google App Engine](https://alpha-properties-app.appspot.com/)
 
 ![Stock property](https://raw.githubusercontent.com/kodiri/alpha-props/master/src/frontend/common/images/header.jpg)

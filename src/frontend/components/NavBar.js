@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
-import SearchBar from './SearchBar.js';
+// import SearchBar from './SearchBar.js';
 
 function NavBar() {
   return (
@@ -12,10 +12,10 @@ function NavBar() {
       <nav to="/" className="navigation_items">
         <Link to="/">Home </Link>
         <Link to="/About">About </Link>
-        <Link to="/Search">Search </Link>
+        {/* <Link to="/Search">Search </Link> */}
         <Link to="/Login">Login </Link>
       </nav>
-      <SearchBar/>
+      {/* <SearchBar/> */}
     </div>
   );
 }

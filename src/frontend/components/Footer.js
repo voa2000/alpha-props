@@ -16,7 +16,7 @@ function Footer() {
         </button>
       </div>
       <div className="Footer-End">
-        <p>@Copyright Alpha Props 2019</p>
+        <p>&#xa9; Copyright Alpha Props 2019-{new Date().getFullYear()}</p>
       </div>
     </div>
   );
