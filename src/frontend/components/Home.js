@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Body from "./Body"
+// import Search from './Search';
 
 
 class Home extends React.Component {
@@ -8,6 +9,7 @@ class Home extends React.Component {
     return (
       <>
         <Header />
+        {/* <Search /> */}
         <Body />
       </>
     );
